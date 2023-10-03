@@ -1,0 +1,30 @@
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* root variables */
+:root {
+  --color-primary: #ff5722;
+  --color-secondary-light: #fff6f2;
+  --color-secondary-dark: #ffa589;
+  --color-navbar: #f8f8f8;
+  --color-headings: #000;
+  --color-body: #333;
+  --color-white: #fff;
+}
+
+html {
+  /* 1rem=16px convert 1rem=10px */
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-body);
+  font-size: 1.4rem;
+}
