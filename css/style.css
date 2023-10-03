@@ -119,3 +119,25 @@ h2 {
     font-size: 1.4rem;
   }
 }
+
+/* list component */
+.list {
+  font-size: 1.6rem;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.list--tick .list__item {
+  background: url("/assets/images/Tick-Square.svg") no-repeat right center;
+  padding-right: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    margin-bottom: 2rem;
+  }
+}
