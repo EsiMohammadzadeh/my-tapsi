@@ -11,6 +11,7 @@
 /* root variables */
 :root {
   --color-primary: #ff5722;
+  --color-primary-light: #ff7a50;
   --color-secondary-light: #fff6f2;
   --color-secondary-dark: #ffa589;
   --color-navbar: #f8f8f8;
@@ -27,6 +28,12 @@ html {
 body {
   color: var(--color-body);
   font-size: 1.4rem;
+}
+
+/* container */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 /* heading styles */
