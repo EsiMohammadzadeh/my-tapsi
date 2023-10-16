@@ -697,3 +697,136 @@ input[type="email"]::placeholder {
     padding: 0.75rem 3rem;
   }
 }
+
+/* hero section */
+.hero-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section picture {
+  width: 100%;
+}
+
+.hero-section img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+.hero-wrapper {
+  position: absolute;
+  width: 100%;
+  /* background-color: orange; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-btn {
+  border-radius: 12px;
+  background: linear-gradient(
+    51deg,
+    rgba(23, 26, 60, 0.7) 5%,
+    rgba(23, 26, 60, 0.3) 95%
+  );
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+}
+
+.intro-btn h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.intro-btn h2 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+.intro-btn__passenger {
+  background-color: var(--color-white);
+  border: 1px solid #fff;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  padding: 14px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+}
+
+.intro-btn__passenger .icon {
+  margin-left: 1.5rem;
+}
+
+.intro-btn__passenger--transparent {
+  background-color: #ffffff00;
+  color: #fff;
+}
+
+.intro-btn__passenger p {
+  font-size: 1.4rem;
+}
+
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.hero-section__mockup-phone {
+  position: absolute;
+  left: 6%;
+  top: 150px;
+  /* background-color: red; */
+  transform: scale(1.4);
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-wrapper {
+    justify-content: flex-start;
+  }
+
+  .intro-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.5rem;
+  }
+
+  .intro-btn {
+    width: 570px;
+    padding: 25px;
+    border-radius: 20px;
+  }
+
+  .intro-btn h1 {
+    font-size: 5rem;
+  }
+
+  .intro-btn h2 {
+    font-size: 2.5rem;
+  }
+
+  .intro-btn__passenger {
+    width: 250px;
+  }
+
+  .intro-btn__passenger p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-section__mockup-phone {
+    display: block;
+  }
+}
