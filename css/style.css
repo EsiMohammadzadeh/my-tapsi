@@ -722,6 +722,7 @@ input[type="email"]::placeholder {
 /* hero section */
 .hero-section {
   position: relative;
+  top: 49px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -761,6 +762,7 @@ input[type="email"]::placeholder {
 
 .intro-btn h1 {
   font-size: 2.5rem;
+  margin-bottom: 2rem;
   color: #fff;
 }
 
@@ -768,7 +770,7 @@ input[type="email"]::placeholder {
   font-size: 1.6rem;
   color: #fff;
   margin-bottom: 3rem;
-  font-weight: 500;
+  font-weight: normal;
 }
 
 .intro-btn__passenger {
@@ -780,6 +782,7 @@ input[type="email"]::placeholder {
   width: 220px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .intro-btn__passenger .icon {
@@ -831,10 +834,12 @@ input[type="email"]::placeholder {
 
   .intro-btn h1 {
     font-size: 5rem;
+    margin-bottom: 4.5rem;
   }
 
   .intro-btn h2 {
     font-size: 2.5rem;
+    margin-bottom: 5rem;
   }
 
   .intro-btn__passenger {
@@ -847,6 +852,9 @@ input[type="email"]::placeholder {
 }
 
 @media screen and (min-width: 1024px) {
+  .hero-section {
+    top: 61px;
+  }
   .hero-section__mockup-phone {
     display: block;
   }
