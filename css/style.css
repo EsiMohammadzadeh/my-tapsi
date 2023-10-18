@@ -266,10 +266,17 @@ input[type="email"]::placeholder {
 .feature {
   display: grid;
   margin-bottom: 6rem;
+  gap: 3rem 10rem;
+}
+
+.feature__title {
+  line-height: 1.8;
+  margin-bottom: 1rem;
 }
 
 .feature__text {
   margin-bottom: 2rem;
+  line-height: 2;
 }
 
 .feature .btn {
@@ -277,13 +284,13 @@ input[type="email"]::placeholder {
 }
 
 .feature__image {
-  margin-bottom: 2rem;
   text-align: center;
 }
 
 .feature__image > img {
-  width: 70%;
-  height: auto;
+  width: 85%;
+  max-height: 400px;
+  object-fit: contain;
 }
 
 @media screen and (min-width: 1024px) {
