@@ -96,7 +96,7 @@ input[type="email"]::placeholder {
 ::placeholder {
   font-size: 1.2rem;
   color: #333;
-  font-family: "iransans";
+  font-family: Vazirmatn;
 }
 
 /* buttons component */
@@ -382,18 +382,20 @@ input[type="email"]::placeholder {
 
 /* contact-us component */
 .contact-us {
-  display: grid;
+  margin: 8rem 0;
 }
 
 .contact-us__title {
   font-size: 3.5rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .contact-us__text {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   text-align: center;
   margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
 .contact-us__map {
@@ -422,6 +424,7 @@ input[type="email"]::placeholder {
   margin-left: 1rem;
   display: block;
   max-width: 250px;
+  line-height: 1.6;
 }
 
 .contact-us__social {
@@ -433,6 +436,7 @@ input[type="email"]::placeholder {
 
 @media screen and (min-width: 1024px) {
   .contact-us {
+    display: grid;
     grid-template-areas:
       "title title"
       "text text"
@@ -440,6 +444,7 @@ input[type="email"]::placeholder {
       "map form"
       "social form";
     grid-template-columns: 70fr 30fr;
+    margin: 10rem 0;
   }
 
   .contact-us__title {
@@ -482,6 +487,7 @@ input[type="email"]::placeholder {
     grid-area: social;
     justify-content: flex-end;
     margin-bottom: 0;
+    margin-top: 2.5rem;
   }
 
   .contact-us__social .icon-container {
