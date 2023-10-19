@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>my tapsi</title>
 </head>
 
@@ -82,7 +84,8 @@
         </div>
     </section>
 
-    <section class="services container block">
+    <section class="services container block" data-aos="fade-up" data-aos-duration="1500"
+        data-aos-aeasing="ease-in-out">
         <h2 class="services__title">سرویس های تپسی</h2>
         <div class="services__tabs">
             <a class="tab active" data-tab-target="nav-classic-tab">
@@ -209,7 +212,8 @@
         </div>
     </section>
 
-    <section class="feature container feature--reverse block">
+    <section class="feature container feature--reverse block" data-aos="fade-up" data-aos-duration="1500"
+        data-aos-aeasing="ease-in-out">
         <div class="feature__image">
             <img src="/assets/images/desktop.png" alt="feature__image">
         </div>
@@ -226,7 +230,7 @@
         </div>
     </section>
 
-    <section class="feature container block">
+    <section class="feature container block" data-aos="fade-up" data-aos-duration="1500" data-aos-aeasing="ease-in-out">
         <div class="feature__image">
             <img src="/assets/images/laptop.png" alt="feature__image">
         </div>
@@ -244,7 +248,7 @@
     </section>
 
     <!-- plan component -->
-    <section class="container block">
+    <section class="container block" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-aeasing="ease-in-out">
         <h2>تعرفه‌های ویژه مشتریان</h2>
         <div class="block-plan">
             <div class="plan">
@@ -314,7 +318,7 @@
     </section>
 
     <!-- contact-us -->
-    <section class="container block">
+    <section class="container block" data-aos="zoom-in" data-aos-duration="1500" data-aos-aeasing="ease-in-out">
         <div class="contact-us">
             <h3 class="contact-us__title">ارتباط با ما</h3>
             <p class="contact-us__text">شما می توانید نظرات و انتقادات خود را برای ما بفرستید</p>
@@ -465,6 +469,10 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/main.js"></script>
 </body>
 
