@@ -1259,3 +1259,66 @@ input[type="email"]::placeholder {
   display: flex;
   align-items: center;
 }
+
+/* radio-button component */
+.select-type {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.select-control input[type="radio"] {
+  display: none;
+}
+
+.select-control {
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.select-control label {
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  border-radius: 32px;
+  border: 2px solid #ccc;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  color: #444;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.select-control label::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  box-shadow: 0 0 0 2px #ccc;
+  border-radius: 100%;
+  right: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 3px solid #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.select-control input[type="radio"]:checked + label {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.select-control input[type="radio"]:checked + label::before {
+  box-shadow: 0 0 0 2px var(--color-primary);
+  background-color: var(--color-primary);
+}
+
+@media screen and (min-width: 1024px) {
+  .select-type  {
+    flex-direction: row;
+    align-items: center;
+  }
+}
