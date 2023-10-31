@@ -71,7 +71,8 @@ h2 {
 
   /* customize the scrollbar */
   ::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
+    height: 10px;
   }
 
   /* Track */
