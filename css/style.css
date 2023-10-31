@@ -155,6 +155,12 @@ input[type="email"]::placeholder {
   font-size: 1.6rem;
 }
 
+.btn--border {
+  border: 2px solid #222;
+  color: #222;
+  background-color: var(--color-white);
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.6rem;
@@ -681,6 +687,19 @@ input[type="email"]::placeholder {
   border-bottom: 1px solid #cccccc39;
 }
 
+.nav__item.nav__item--border a {
+  border-bottom: 2px solid transparent;
+}
+
+.nav__item.nav__item--border:first-child a {
+  padding-top: 3rem !important;
+}
+
+.nav__item.nav__item--border a:hover {
+  border-color: var(--color-primary-light);
+  color: #444;
+}
+
 .nav__item > a {
   color: #444;
   display: block;
@@ -737,6 +756,26 @@ input[type="email"]::placeholder {
   color: #fff;
 }
 
+.nav__item.telephone {
+  display: none;
+}
+
+.nav__item.telephone a {
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  padding: 1rem 3rem !important;
+  border-color: var(--color-primary-light);
+}
+
+.nav__item.telephone a:hover {
+  border-color: #222;
+}
+
+.nav__item.telephone a .icon {
+  margin-right: 1rem;
+}
+
 @media screen and (min-width: 768px) {
   .nav {
     padding: 0 1rem;
@@ -766,12 +805,31 @@ input[type="email"]::placeholder {
     border: 0;
   }
 
+  .nav__item.nav__item--border:first-child a {
+    border-color: var(--color-primary-light);
+    padding-top: 1rem !important;
+  }
+
+  .nav__item--border a {
+    padding: 1rem 0 !important;
+  }
+
+  .nav__item.telephone {
+    display: block;
+  }
+
   .nav__item.cta a {
     font-size: 1.6rem;
   }
 
   .nav__item .btn {
     padding: 1.25rem 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__item.telephone {
+    padding-right: 15rem;
   }
 }
 
@@ -1318,7 +1376,7 @@ input[type="email"]::placeholder {
 }
 
 @media screen and (min-width: 1024px) {
-  .select-type  {
+  .select-type {
     flex-direction: row;
     align-items: center;
   }
