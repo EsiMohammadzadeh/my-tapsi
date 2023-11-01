@@ -1494,3 +1494,58 @@ input[type="email"]::placeholder {
   width: 60px;
   transform: translateY(-10px);
 }
+
+/* news section */
+.news {
+  margin-top: 5rem;
+}
+.news__header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+.news__heading {
+  margin-top: 4rem;
+}
+
+.news__category-title {
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 1.5rem;
+}
+
+.news__category-title span {
+  border-bottom: 5px solid var(--color-primary-light);
+  padding-bottom: 0.5rem;
+}
+
+.news-post {
+  line-height: 2;
+  padding: 2rem 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.news-post__time {
+  color: #9b9b9b;
+}
+
+.news-post__title a {
+  color: var(--color-body);
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+.news-post__title a:hover {
+  color: var(--color-primary);
+}
+
+.news-post__description::after {
+  content: "...";
+  color: var(--color-primary-light);
+}
+
+.news-post__link {
+  color: var(--color-primary-light);
+  display: block;
+  text-align: center;
+}
