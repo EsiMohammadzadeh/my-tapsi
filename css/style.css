@@ -645,6 +645,7 @@ input[type="email"]::placeholder {
 .main-header {
   background-color: var(--color-navbar);
   position: fixed;
+  top: 0;
   width: 100%;
   border-bottom: 1px solid #ddd;
   z-index: 10;
@@ -828,6 +829,11 @@ input[type="email"]::placeholder {
 }
 
 @media screen and (min-width: 1024px) {
+  .main-header--white {
+    background-color: var(--color-white);
+    border-color: white;
+  }
+
   .nav__item.telephone {
     padding-right: 15rem;
   }
@@ -1379,5 +1385,88 @@ input[type="email"]::placeholder {
   .select-type {
     flex-direction: row;
     align-items: center;
+  }
+}
+
+/* teaser component */
+.teaser {
+  margin-top: 70px;
+}
+.teaser div:not(:last-child) {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 2rem 3rem;
+  line-height: 1.8;
+}
+
+.teaser__heading span {
+  border: 2px solid #fff;
+  width: 150px;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.teaser__heading h2 {
+  font-size: 3rem;
+  color: var(--color-white);
+  margin-bottom: 0;
+}
+
+.teaser__description {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+.teaser__description .btn {
+  border: 2px solid #fff;
+  display: block;
+  margin-top: 2rem;
+}
+
+.teaser__video video {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .teaser {
+    position: relative;
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: #ffff00; */
+    height: 90vh;
+  }
+
+  .teaser__heading {
+    width: 50%;
+    height: 35%;
+    padding-left: 28rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .teaser__description {
+    width: 70%;
+    padding-left: 50rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 65%;
+    overflow: hidden;
+  }
+
+  .teaser__video {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 72%;
+    border-radius: 10px;
+  }
+
+  .teaser__video video {
+    border-radius: 10px;
   }
 }
