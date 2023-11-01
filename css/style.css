@@ -138,6 +138,7 @@ input[type="email"]::placeholder {
   text-align: center;
   white-space: nowrap;
   font-size: 1.4rem;
+  transition: all 0.3 ease-in-out;
 }
 
 .btn--primary {
@@ -159,6 +160,11 @@ input[type="email"]::placeholder {
   border: 2px solid #222;
   color: #222;
   background-color: var(--color-white);
+}
+
+.btn--border:hover {
+  background-color: var(--color-headings);
+  color: var(--color-primary-light);
 }
 
 @media screen and (min-width: 1024px) {
@@ -1469,4 +1475,22 @@ input[type="email"]::placeholder {
   .teaser__video video {
     border-radius: 10px;
   }
+}
+
+/* double-border */
+.double-border {
+  background-color: var(--color-primary-light);
+  height: 5px;
+  width: 100px;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.double-border::before {
+  content: "";
+  display: block;
+  background-color: var(--color-primary-light);
+  height: 5px;
+  width: 60px;
+  transform: translateY(-10px);
 }
