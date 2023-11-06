@@ -1646,3 +1646,133 @@ input[type="email"]::placeholder {
     margin-top: 5rem;
   }
 }
+
+/* shareholders */
+.shareholders {
+  margin-top: 6rem;
+}
+.shareholders__bg {
+  background-image: url("../assets/images/candels.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 490px;
+}
+
+.shareholders__bg .container {
+  position: relative;
+}
+
+.shareholders__special-services {
+  background-color: var(--color-primary);
+  padding: 5rem 3rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.shareholders__special-services .double-border {
+  background-color: var(--color-white);
+}
+
+.shareholders__special-services .double-border::before {
+  background-color: var(--color-white);
+}
+
+.shareholders__special-services .title {
+  color: var(--color-white);
+  line-height: 1.7;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+}
+
+.shareholders__special-services p {
+  line-height: 2;
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.shareholders__special-services input {
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: right;
+  font-size: 1.4rem;
+}
+
+.shareholders__special-services .btn {
+  margin-bottom: 0;
+  padding: 1rem;
+  color: var(--color-primary);
+  transition: all 0.2s ease-in-out;
+}
+
+.shareholders__special-services .btn:hover {
+  background-color: var(--color-headings);
+  color: var(--color-white);
+}
+
+.shareholders > .container {
+  display: grid;
+  gap: 5rem;
+  margin-top: 12rem;
+}
+
+.shareholders__portal {
+  order: 1;
+}
+
+.shareholders__portal .double-border {
+  margin-bottom: 4rem;
+}
+
+.shareholders__portal p {
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.shareholders__portal .btn {
+  display: block;
+  margin-bottom: 0;
+}
+
+.shareholder-img img {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 395px) {
+  .shareholders__special-services {
+    top: 125px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shareholders > .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .shareholders__portal {
+    order: 0;
+  }
+
+  .shareholders__portal .btn {
+    width: 50%;
+  }
+
+  .shareholders__special-services {
+    left: 20px;
+    transform: translateX(0);
+    top: 50px;
+    width: 45%;
+  }
+
+  .shareholders__special-services .title {
+    font-size: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+}
