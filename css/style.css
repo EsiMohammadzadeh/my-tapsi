@@ -1850,3 +1850,31 @@ input[type="email"]::placeholder {
     grid-area: btn;
   }
 }
+
+/* footer page stockAffairs  */
+.footer-pageStockAffairs {
+  margin-top: 5rem;
+  border-bottom: 15px solid var(--color-primary-light);
+  padding-bottom: 2rem;
+}
+.footer-pageStockAffairs .icons {
+  padding-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+}
+.footer-pageStockAffairs .icons i {
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.footer-pageStockAffairs .icons i:hover {
+  color: var(--color-primary-light) !important;
+}
+
+.footer-pageStockAffairs p {
+  line-height: 2;
+  text-align: center;
+  color: #ced4df;
+}
