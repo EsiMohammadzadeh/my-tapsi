@@ -1776,3 +1776,77 @@ input[type="email"]::placeholder {
     margin-bottom: 3.5rem;
   }
 }
+
+/* stockAffairs__contact-us */
+.stockAffairs__contact-us {
+  margin-top: 10rem;
+}
+
+.stockAffairs__contact-us h2 {
+  margin: 3rem 0 2rem;
+}
+
+.stockAffairs__contact-us p {
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+
+.stockAffairs__contact-us form {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.stockAffairs__contact-us form input,
+.stockAffairs__contact-us form textarea {
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.stockAffairs__contact-us form ::placeholder {
+  font-size: 1.4rem;
+  color: #ccc;
+}
+
+.stockAffairs__contact-us form input:focus,
+.stockAffairs__contact-us form textarea:focus {
+  border-color: var(--color-primary-light);
+}
+
+.stockAffairs__contact-us form .btn {
+  margin-top: 0;
+  transition: all 0.3s ease-in-out;
+  color: #aaa;
+}
+
+.stockAffairs__contact-us form .btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+@media screen and (min-width: 768px) {
+  .stockAffairs__contact-us form {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "name textarea"
+      "email textarea"
+      "btn btn";
+  }
+
+  .stockAffairs__contact-us .input-name {
+    grid-area: name;
+  }
+
+  .stockAffairs__contact-us .input-email {
+    grid-area: email;
+  }
+
+  .stockAffairs__contact-us .textarea {
+    grid-area: textarea;
+  }
+
+  .stockAffairs__contact-us .btn {
+    grid-area: btn;
+  }
+}
