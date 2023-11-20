@@ -1893,6 +1893,7 @@ input[type="email"]::placeholder {
 .tapsi-pack__header {
   background-color: var(--color-white);
   border-color: #fff;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.133);
 }
 
 .tapsi-pack__logo {
@@ -2032,5 +2033,91 @@ input[type="email"]::placeholder {
 
   .tapsi-pack__banner .wrapper-description {
     flex-basis: 40%;
+  }
+}
+
+/* tapsi-pack__option */
+.tapsi-pack__main-content {
+  background-color: #fff;
+  position: relative;
+  top: -1px;
+  z-index: 8;
+}
+
+.tapsi-pack__options__title {
+  text-align: center;
+  margin-bottom: 5rem;
+  color: var(--color-primary);
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.tapsi-pack__options .wrapper {
+  display: grid;
+  gap: 3rem;
+}
+
+.tapsi-pack__option {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tapsi-pack__option__icon .icon-container {
+  background-color: #f1f1f1;
+}
+
+.tapsi-pack__option__description .title {
+  margin-bottom: 0.5rem;
+  line-height: 2;
+}
+
+.tapsi-pack__options > .btn {
+  display: block;
+  margin: 5rem auto 0;
+  width: 75%;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+}
+
+.tapsi-pack__options > .btn:hover {
+  box-shadow: 0 5px 10px 0 rgba(255, 87, 34, 0.3);
+  transform: scale(1.01);
+}
+
+@media screen and (min-width: 768px) {
+  .tapsi-pack__options__title {
+    padding: 9rem 0 7rem;
+    margin-bottom: 0;
+  }
+
+  .tapsi-pack__options .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 3rem;
+  }
+
+  .tapsi-pack__option {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tapsi-pack__option__description {
+    text-align: center;
+  }
+
+  .tapsi-pack__option__icon .icon-container {
+    border-radius: 12px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .tapsi-pack__option__icon .icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .tapsi-pack__options > .btn {
+    width: 200px;
+    margin-top: 10rem;
   }
 }
